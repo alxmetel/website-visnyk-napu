@@ -4,8 +4,8 @@ var win = $(window),
     nav = $('nav'),
     pos = nav.offset().top,
     sticky = function() { 
-      win.scrollTop() > pos ? nav.addClass('sticky') : nav.removeClass('sticky')
-    }
+      win.scrollTop() > pos ? nav.addClass('sticky') : nav.removeClass('sticky');
+    };
 win.scroll(sticky);
 
 
@@ -34,7 +34,7 @@ for (i = 0; i < acc.length; i++) {
     } else {
       panel.style.maxHeight = panel.scrollHeight + "px";
     } 
-  }
+  };
 }
 
 // Make the first accordion section initially active
@@ -44,7 +44,7 @@ var initActivePanel = document.getElementById("initialActivePanel");
 function setInitialActive() {
   initActiveButton.classList.toggle("active");
   initActivePanel.style.maxHeight = initActivePanel.scrollHeight + "px";
-};
+}
 
 
 // MAP

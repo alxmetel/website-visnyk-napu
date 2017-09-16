@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/responsive.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Oswald:500" rel="stylesheet">
+  <link rel="icon" href="images/favicon.ico">
 </head>
 <body>
   <div id="header-background"></div>
