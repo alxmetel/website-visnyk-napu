@@ -1,232 +1,345 @@
+/* BODY */
+
 body {
   margin: 0;
   padding: 0;
   border: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
-  background-image: url("../images/egg_shell.png");
-  /*background-color: #eff1f5;*/
+  background-image: url("../images/background.png");
+  min-height:100%; /*for the Footer*/
+  position:relative; /*for the Footer*/
+}
+body::after { /*for the Footer*/
+  content:'';
+  display:block;
+  height:120px;
 }
 
 
 /* HEADER */
 
-.header-background {
+#header-background {
 	width: 100%;
 	height: 375px;
-  background-image: url("../images/attorney_banner-1920x450.jpg");
+  background-image: url("../images/banner.jpg");
   background-repeat: no-repeat;
   background-position: left top;
   background-size: cover;
-	/*background-color: #3498db;*/
-	position: absolute;
-	top: 0;
-	z-index: -1;
+  position: absolute;
+  top: 0;
+  z-index: -1;
 }
-
-.centered-block {
+#centered-block {
 	max-width: 1000px;
-	/*outline: 1px dotted red;*/
 	margin: auto;
   margin-bottom: 100px;
-	position: relative;
-	top: 120px;
+  position: relative;
+  top: 120px;
   background-color: white;
   -webkit-box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.75);
   box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.75);
 }
-
-header, .topnav{
-  width: 100%;
-  text-align: center;
-  color: #fff;
+header {
+  height: 255px;
+  background-color: #2A658F;
+  overflow: hidden;
+  -webkit-box-shadow: inset -200px 0px 400px -30px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset -200px 0px 400px -30px rgba(0,0,0,0.75);
+  box-shadow: inset -200px 0px 400px -30px rgba(0,0,0,0.75);
 }
-
-.title {
-	height: 255px;
-	background-color: #2A658F;
+header img {
+  max-height: 100%;
+  height: 210px;
+  margin: 20px 0 0 190px;
+  float: left;
+}
+#last-issue {
+  position: absolute;
+  width: 120px;
+  height: 180px;
+  top: -60px;
+  right: 120px;
+  z-index: 99;
+  -ms-transform: rotate(7deg); /* IE 9 */
+  -webkit-transform: rotate(7deg); /* Safari */
+  transform: rotate(7deg);
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+}
+#last-issue:hover {
+  -webkit-box-shadow: 0px 0px 45px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 45px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 45px 0px rgba(0,0,0,0.75);
+}
+header #right-block .last-issue-capture {
+  display: block;
+  position: absolute;
+  right: 0;
+  margin: 20px 20px 0 0;
+}
+header #right-block .last-issue-capture p {
+  margin-bottom: -5px;
+  color: #EBB152;
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+}
+.social-header {
+  display: block;
+  position: relative;
+  float: right;
+  width: 265px;
+  height: 60px;
+  top: 175px;
   overflow: hidden;
 }
-
-.title img {
-  max-height: 100%;
+.social-header .social-icons {
+  width: 42px;
+  height: 42px;
+  margin: 0 12px;
 }
+.social-header .social-icons:hover {
+  opacity: 0.5;
+}
+
+
+/* NAVIGATION */
 
 .topnav {
 	position: relative;
+  width: 100%;
+  text-align: center;
   z-index: 1;
   height: 50px;
   line-height: 50px;
-  /*margin-bottom: -10px; /* nav height */
-  /*padding: 20px 0;*/
-  /*word-spacing: 36px;*/
-  background-color: rgba(52,152,219,.9);
+  background-color: rgba(52,125,178,.9);
   transition: box-shadow 400ms;
-
-  /*overflow: hidden;*/
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
-
-.topnav a{
-	color: white;
-	display: inline-block;
-	line-height: 1;
-	text-decoration: none;
-	margin: 0 30px;
-	/*padding: 0 30px;*/
-/*	float: left;
-	color: #f2f2f2;
-  text-align: center;
+.topnav a {
+	color: #ffffff;
+  display: inline-block;
+  line-height: 1.5;
+  text-decoration: none;
   padding: 14px 16px;
-  font-size: 17px;*/
+  margin: 0 -2px;
+  font-size: 15px;
 }
-a:hover{
+.topnav a:hover {
   box-shadow(0 0 0 1px #fff);
-
-/*  background-color: #ddd;
-  color: black;*/
+  background-color: #225477;
 }
-
-/*.topnav .icon {
+.topnav .menu-button {
   display: none;
-}*/
-
+}
 .sticky{
   position: fixed;
-	max-width: 1000px;
+  max-width: 1000px;
   top: 0;
   z-index: 2;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 
-/* MAIN */
+/* ABOUT */
 
-.napu-logo {
+#napu-logo {
   float: left;
-}
-
-.napu-logo img {
-  width: 350px;
+  width: 270px;
   margin: 0 40px 20px 0;
 }
-
 .content {
   padding: 60px;
 }
-
 .content::after {
-    content: "";
-    clear: both;
-    display: table;
+  content: "";
+  clear: both;
+  display: table;
 }
-
-.main-page {
+#about {
   text-align: justify;
 }
+#about h4 {
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
 
 /* ARCHIVE */
 
-/* Style the buttons that are used to open and close the accordion panel */
 button.accordion {
-    background-color: #eee;
-    color: #444;
-    font-size: 18px;
-    cursor: pointer;
-    padding: 18px 45px;
-    width: 100%;
-    text-align: center;
-    border: none;
-    outline: none;
-    transition: 0.3s;
+  background-color: #dae7f1;
+  color: #444;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 13px 30px;
+  width: 100%;
+  text-align: center;
+  border: none;
+  outline: none;
+  transition: 0.2s;
 }
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 button.accordion.active,
 button.accordion:hover {
-    background-color: #a9d3ef;
+  background-color: #225477;
+  color: #fff;
 }
-
-/* Style the accordion panel. Note: hidden by default */
 div.panel {
-    padding: 0 18px;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
+  padding: 0 18px;
+  background-color: #fff;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  position: relative;
+  margin: 10px auto;
+  text-align:center;
 }
-
-.archive .accordion:first-child div.panel {
-  /*background-color: red;*/
-  /*overflow: hidden;*/
-}
-
-
 button.accordion:after {
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
-    font-size: 15px;
-    color: #777;
-    float: right;
-    margin-left: 5px;
+  font-family: 'Glyphicons Halflings';
+  content: "\e114";
+  font-size: 18px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
 }
-
 button.accordion.active:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  content: "\e080";
 }
-
-.archive .accordion {
-	font-size: 22px;
-	font-weight: bold;
+#archive .accordion span {
+  font-weight: bold;
 }
-
 .card {
-    /* Add shadows to create the "card" effect */
-    float: left;
-		width: 180px;
-		height: 320px;
-		margin: 50px 15px;
-    -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
-
-    /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);*/
-    transition: 0.2s;
-    border-radius: 5px; /* 5px rounded corners */
+  display:inline-block;
+  width: 140px;
+  margin: 30px 15px;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+  transition: 0.2s;
+  border-radius: 5px;
 }
-
-/* Add rounded corners to the top left and the top right corner of the image */
-img {
-    border-radius: 5px 5px 0 0;
+.card img {
+  border-radius: 5px 5px 0 0;
+  width: 100%;
 }
-
-/* On mouse-over, add a deeper shadow */
+.card .container {
+  width: 100%;
+}
+.card .container p {
+  display: inline-block;
+  margin: 15px 0;
+}
+.card .container .english {
+  width: 24px;
+  float: right;
+  margin-top: 12px;
+}
 .card:hover {
   -webkit-box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.75);
   box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.75);
-    cursor: pointer;
-}
-
-/* Add some padding inside the card container */
-.container {
-    padding: 2px 16px;
+  cursor: pointer;
 }
 
 
 /* COOPERATION */
 
-.cooperation ul {
-  list-style-type: none;
+#cooperation h3 {
+  font-size: 22px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  line-height: 30px;
 }
-
+#cooperation ol>li {
+  font-weight: bold;
+}
+#cooperation ul {
+  list-style-type: none;
+  margin-bottom: 30px;
+}
+#cooperation ul,
+#cooperation p {
+  text-align: justify;
+}
+#cooperation li {
+  margin-bottom: 10px;
+}
 
 
 /* CONTACTS */
 
+#contacts {
+  padding-bottom: 40px;
+}
+#contact-info {
+  margin: 30px 0 30px 60px;
+}
+#contact-info h3 {
+  padding: 0 0 5px 15px;
+}
+ul.contact-list {
+  margin-top: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ul.contact-list i {
+  width: 40px;
+  text-align: center;
+}
+ul.contact-list li i.fa::before {
+  color: #2A658F;
+  font-size: 20px;
+}
+ul.contact-list li.phones a {
+  display: none;
+}
+ul.contact-list li {
+  margin-bottom: 5px;
+}
+#social-contacts {
+  display: block;
+  position: relative;
+  width: 265px;
+  height: 60px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+#social-contacts .social-icons {
+  width: 42px;
+  height: 42px;
+  margin: 0 12px;
+}
+#social-contacts .social-icons:hover {
+  opacity: .7;
+}
+
+
+/* MAP */
+
 #map {
+  width: 100%;
+  height: 400px;
   float: left;
   margin-right: 30px;
 }
 
 
+/* FOOTER */
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(26,26,26,.8);
+  color: #fff;
+  padding: 1rem;
+  clear: left;
+  text-align: center;
+  font-size: 90%;
+  overflow:hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
