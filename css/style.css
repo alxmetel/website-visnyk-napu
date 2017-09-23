@@ -169,6 +169,13 @@ header #right-block .last-issue-capture p {
 
 /* ARCHIVE */
 
+#archive h3 {
+  padding: 0 20px 40px 0;
+  margin-top: 0;
+  font-weight: bold;
+  text-align: center;
+}
+
 button.accordion {
   background-color: #dae7f1;
   color: #444;
@@ -253,7 +260,7 @@ button.accordion.active:after {
   text-align: center;
   line-height: 30px;
 }
-#cooperation ol>li {
+#cooperation span.bold-item {
   font-weight: bold;
 }
 #cooperation ul {
@@ -264,7 +271,7 @@ button.accordion.active:after {
 #cooperation p {
   text-align: justify;
 }
-#cooperation li {
+#cooperation div {
   margin-bottom: 10px;
 }
 
@@ -278,35 +285,35 @@ button.accordion.active:after {
   margin: 30px 0 30px 60px;
 }
 #contact-info h3 {
-  padding: 0 0 5px 15px;
+  padding: 0 0 25px 15px;
 }
-ul.contact-list {
+div.contact-list {
   margin-top: 10px;
   list-style: none;
   padding: 0;
   margin: 0;
 }
-ul.contact-list i {
+div.contact-list i {
   width: 40px;
   text-align: center;
 }
-ul.contact-list li i.fa::before {
+div.contact-list i.fa::before {
   color: #2A658F;
   font-size: 20px;
 }
-ul.contact-list li.phones a {
+div.contact-list .phones a {
   display: none;
 }
-ul.contact-list li {
+div.contact-list div {
   margin-bottom: 5px;
 }
 #social-contacts {
   display: block;
   position: relative;
-  width: 265px;
+  /*width: 265px;*/
   height: 60px;
   overflow: hidden;
-  margin-top: 20px;
+  margin: 20px 10px 0 0;
 }
 #social-contacts .social-icons {
   width: 42px;

@@ -109,10 +109,10 @@
   #contact-info {
     margin: 0 0 40px 0;
   }
-  ul.contact-list li.phones a {
+  div.contact-list .phones a {
     display: inline-block;
   }
-  ul.contact-list li.phones span {
+  div.contact-list .phones span {
     display: none;
   }
 

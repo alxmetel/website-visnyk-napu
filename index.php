@@ -1,4 +1,4 @@
-<?php $page_title = "Головна"; ?>
+<?php $page_title = "Про видання"; ?>
 <?php include("includes/header.php");?>
 <?php include("includes/navigation.html");?>
 
@@ -17,3 +17,6 @@
 </section>
 
 <?php include("includes/footer.html");?>
+
+</body>
+</html>
