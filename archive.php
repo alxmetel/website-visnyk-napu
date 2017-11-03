@@ -31,6 +31,23 @@
           </div>
         </a>
       </div>
+      <br>
+      <div class="card">
+        <a href="data/issues-2017/Visnyk-NAPU_4_2017_preview.pdf" target="_blank">
+          <img src="images/cover.jpg" alt="Вісник НАПУ №4(50)'2017 (огляд)">
+          <div class="container">
+            <p>4(50)'2017 (огляд)</p> 
+          </div>
+        </a>
+      </div>
+      <div class="card">
+        <a href="data/issues-2017/Visnyk-NAPU_4-1_2017.pdf" target="_blank">
+          <img src="images/cover_spec.jpg" alt="Вісник НАПУ №4/1(51)'2017">
+          <div class="container">
+            <p>4/1(51)'2017 Спецвипуск</p> 
+          </div>
+        </a>
+      </div>
     </div>
 
     <button class="accordion">Видання за <span>2016</span> рік</button>

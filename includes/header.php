@@ -19,13 +19,12 @@
     <header>
      <img src="images/visnyk_napu-logo.png" alt="Національна академія прокуратури України">
      <div id="right-block">
-      <a href="data/issues-2017/Visnyk-NAPU_3_2017_preview.pdf" target="_blank"><img id="last-issue" src="images/cover.jpg" alt="Найсвіжіший випуск"></a>
+      <a href="data/issues-2017/Visnyk-NAPU_4-1_2017.pdf" target="_blank"><img id="last-issue" src="images/cover_spec.jpg" alt="Найсвіжіший випуск"></a>
       <div class="last-issue-capture">
-        <p>Найсвіжіший</p>
+        <p>Спеціальний</p>
         <p>випуск</p>
-        <p>журналу</p>
-        <br>
-        <p>3(49)'2017</p>
+        <p>до ювілею</p>
+        <p>Академії</p>
       </div>
       <div class="social-header">
         <a href="https://www.facebook.com/spj.napu" target="_blank"><img class="social-icons" src="images/social/facebook-trans.png" alt="Facebook"></a>

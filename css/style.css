@@ -45,8 +45,8 @@ header {
   height: 255px;
   background-color: #2A658F;
   overflow: hidden;
-  -webkit-box-shadow: inset -200px 0px 400px -30px rgba(0,0,0,0.75);
-  -moz-box-shadow: inset -200px 0px 400px -30px rgba(0,0,0,0.75);
+  -webkit-box-shadow: inset -200px 0px 400px -30px rgba(0,0,0,0.75); 
+  -moz-box-shadow: inset -200px 0px 400px -30px rgba(0,0,0,0.75); 
   box-shadow: inset -200px 0px 400px -30px rgba(0,0,0,0.75);
 }
 header img {
@@ -81,7 +81,7 @@ header #right-block .last-issue-capture {
   margin: 20px 20px 0 0;
 }
 header #right-block .last-issue-capture p {
-  margin-bottom: -5px;
+  margin-bottom: -2px;
   color: #EBB152;
   font-family: 'Oswald', sans-serif;
   font-size: 16px;
@@ -253,19 +253,34 @@ button.accordion.active:after {
 
 /* COOPERATION */
 
+#cooperation {
+  line-height: 200%;
+}
+#cooperation .list-item,
+#cooperation ol>li::before {
+  font-weight: bold;
+}
+#cooperation p {
+  font-style: italic;
+}
 #cooperation h3 {
-  font-size: 22px;
+  font-size: 20px;
   margin-top: 30px;
   margin-bottom: 30px;
   text-align: center;
   line-height: 30px;
+}
+#cooperation ol>li {
+  margin-top: 20px;
 }
 #cooperation span.bold-item {
   font-weight: bold;
 }
 #cooperation ul {
   list-style-type: none;
-  margin-bottom: 30px;
+}
+#cooperation ol>li>ul>li:first-child {
+  margin-top: 10px;
 }
 #cooperation ul,
 #cooperation p {
