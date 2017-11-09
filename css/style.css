@@ -45,9 +45,9 @@ header {
   height: 255px;
   background-color: #2A658F;
   overflow: hidden;
-  -webkit-box-shadow: inset -200px 0px 400px -30px rgba(0,0,0,0.75); 
-  -moz-box-shadow: inset -200px 0px 400px -30px rgba(0,0,0,0.75); 
-  box-shadow: inset -200px 0px 400px -30px rgba(0,0,0,0.75);
+  -webkit-box-shadow: inset -200px 0px 200px -30px rgba(0,0,0,0.75); 
+  -moz-box-shadow: inset -200px 0px 200px -30px rgba(0,0,0,0.75); 
+  box-shadow: inset -200px 0px 200px -30px rgba(0,0,0,0.75);
 }
 header img {
   max-height: 100%;
